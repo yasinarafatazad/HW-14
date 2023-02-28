@@ -367,18 +367,20 @@ a{
     width: 100%;
     transition: ease-in-out 0.3s;
     position: relative;
+    overflow: hidden;
 }
 .team-img:hover{
-    box-shadow: 0 0 4px 0 #000;
+    box-shadow: 0 0 4px  #000;
 }
 .team-overlay {
     position: absolute;
     top: 0;
     right: 0;
-    width: 0px;
+    width: 0;
     height: 100%;
     background:rgba(0, 0, 0, 0.6);
     transition: all linear 0.3s;
+    /* visibility: hidden; */
 }
 .team-overlay ul{
     padding-top: 35px;
@@ -398,10 +400,11 @@ a{
 }
 .team-img:hover .team-overlay{
     width: 80px;
+    /* visibility: visible; */
 }
-.team-detils {
-    height: 100px;
-    background: red;
+.team-details {
+    height: 50px;
+    padding-top: 10px;
 }
 .team-detils h3{
     font-family: 'Oswald',sans-serif;
@@ -422,4 +425,81 @@ a{
 .team-col:nth-child(4) {
     margin-right: 0;
 }
-/* Our Team css End */
+/* Our Team css End */ 
+
+/* Testimonial css Start */         
+#testi{
+    text-align: center;
+}
+.testi-row{
+    height: 295px;
+    margin-bottom: 60px;
+}
+.testi-col{
+    float: left;
+    margin-right: 20px;
+    width: 46.8%;
+    height: 100%;
+}
+.testi-img{
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin-bottom: 36px;
+    margin: 0 auto 36px auto;
+}
+.testi-details{
+    background: #f1f1f1;
+    height: 180px;
+    padding: 20px 22px;
+    z-index: 1;
+    position: relative;
+}
+.testi-details-shape{
+    background: #f1f1f1;
+    height: 32px;
+    width: 32px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg)
+}
+.testi-details h3{
+    color: #353535;
+    font-family: 'Oswald',sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    
+}
+.testi-details h4 {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: 20px;
+}
+.testi-details h4 ul li{
+    float: left;
+    font-size: 13px;
+    color: #5bc5f4;
+}
+.testi-details h5{
+    color: #555;
+    font-family: 'Oswald',sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.testi-details p{
+    color: #555;
+    font-family: 'Oswald',sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+}
+/* Testimonial css End */
+
+/* Footer css Start */         
+
+/* Footer css End */ 
